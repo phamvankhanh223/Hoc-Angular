@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Derective va co che rang buoc hai chieu</title>
+    <script type="text/javascript" src="../angular.min.js"></script>
+    <script type="text/javascript" src="1.js"></script>
+</head>
+<body>
+    <h3 class="tieude">directive va co che rang buoc hai chieu</h3>
+    <p class="mota">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti voluptatum illum, nisi et ut sit vel odit labore consequatur alias ducimus aperiam, sequi enim, facere quos recusandae esse dicta at!</p>
+    
+    <div class="noidungchinh" ng-controller="mainController">
+
+        <label for="tentaikhoan">Ten tai khoan</label>
+        <input type="text" id="tentaikhoan" ng-model="tentaikhoan">
+        
+        <h3>facebook.com/{{lowertentaikhoan()}}</h3>
+
+    </div>
+</body>
+</html>
