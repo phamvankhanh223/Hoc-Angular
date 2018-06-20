@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>directive ng-if</title>
+    <link rel="stylesheet" href="1.css">
+    <script type="text/javascript" src="../../angular.min.js"></script> 
+    <script type="text/javascript" src="../../AngularJs/angular-route.min.js"></script> 
+    <script type="text/javascript" src="1.js"></script> 
+
+
+    
+</head>
+<body>
+    <div class="tieude">directive dieu kien hien thi ng-if</div>
+    <p class="mota">tao dieu kien de hien thi mot div</p>
+    <div class="noidung" ng-controller="mainController">
+        <input type="text" ng-model="username">
+        <div class="thongbaoloi alert-danger" ng-if="username.length>len" ng-class="{'test':username.length>len}">
+
+            ban da nhap vao qua 5 ky tu
+
+        </div>
+
+        
+
+        <ul>
+            <li ng-repeat="rule in rules">{{rule.rulename}}</li>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
